@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - Website Formulir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Formulir Registrasi Mahasiswa</h1>
+            <div class="input-control">
+                <label for="nama">Nama Mahasiswa</label>
+                <input id="nama" name="nama" type="text" placeholder="Masukkan nama">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="nrp">NRP Mahasiswa (10 Digit)</label>
+                <input id="nrp"name="nrp" type="text" placeholder="Masukkan NRP">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Masukkan Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="matkul">Mata Kuliah</label>
+                <select id="matkul" name="matkul">
+                    <option value="none"></option>
+                    <option>Dasar Pemrograman</option>
+                    <option>Struktur Data</option>
+                    <option>Sistem Basis Data</option>
+                    <option>Pemrograman Web</option>
+                    <option>Matematika Diskrit</option>
+                    <option>Konsep Kecerdasan Artifisial</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label for="dosen">Dosen</label>
+                <select id="dosen" name="dosen">
+                    <option value="none"></option>
+                    <option>Fajar Baskoro, S.Kom., M.T.</option>
+                    <option>Ir. Siti Rochimah, MT., Ph.D.</option>
+                    <option>Prof. Daniel Oranova Siahaan, S.Kom., M.Sc. PD.Eng.</option>
+                    <option>Sarwosri, S.Kom., MT.</option>
+                    <option>Dr. Umi Laili Yuhana S.Kom., M.Sc.</option>
+                    <option>Rizky Januar Akbar, S.Kom., M.Eng.</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+            <!-- <a><button type="submit">Submit</button></a> -->
+        </form>
+    </div>
+</body>
+</html>
